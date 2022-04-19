@@ -60,7 +60,7 @@ const findsimilarbook: React.FC = () => {
         </Col>
       </Row>
       <Row>
-        <Col span={4}>
+        <Col span={6}>
           <Tabs tabPosition="left" type="card" onChange={callback}>
             <TabPane tab={<span>
               <CheckCircleTwoTone twoToneColor="#52c41a" />
@@ -113,7 +113,7 @@ const findsimilarbook: React.FC = () => {
         </Col>
         {
           data &&
-          <Col span={20}>
+          <Col span={18}>
             <Form
               layout="inline"
               name="basic"
@@ -127,7 +127,7 @@ const findsimilarbook: React.FC = () => {
                 name="translation"
                 rules={[{ required: true, message: 'Please input your translation!' }]}
               >
-                <Input style={{ width: '600px' }} />
+                <Input style={{ width: '400px' }} />
               </Form.Item>
               <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
                 <Button type="primary" htmlType="submit">

@@ -51,7 +51,7 @@ const findsimilarbook: React.FC = () => {
     <PageContainer loading={loading}>
       <Row gutter={46}>
         {
-          !(data) && <Col span={8}><Form
+          !(data) && <Col span={12}><Form
             name="basic"
             onFinish={async (values) => {
               await handleSubmit(values);
@@ -70,7 +70,7 @@ const findsimilarbook: React.FC = () => {
               name="tableofcontents"
               rules={[{ required: true, message: 'Please input Table of contents!' }]}
             >
-              <TextArea rows={24} />
+              <TextArea rows={14} />
             </Form.Item>
             <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
               <Button type="primary" htmlType="submit">
