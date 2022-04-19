@@ -1,0 +1,181 @@
+1. Introducing C#
+Why C#?
+Managed Code and the CLR
+C# Prefers Generality to Specialization
+C# Standards and Implementations
+Many .NETs
+Release Cycles and Long Term Support
+Targeting Multiple .NET Versions with .NET Standard
+Visual Studio and Visual Studio Code
+Anatomy of a Simple Program
+Writing a Unit Test
+Namespaces
+Classes
+Unit Tests
+Summary
+2. Generics
+Generic Types
+Constraints
+Type Constraints
+Reference Type Constraints
+Value Type Constraints
+Value Types All the Way Down with Unmanaged Constraints
+Not Null Constraints
+Other Special Type Constraints
+Multiple Constraints
+Zero-Like Values
+Generic Methods
+Type Inference
+Generics and Tuples
+Inside Generics
+Summary
+3. Object Lifetime
+Garbage Collection
+Determining Reachability
+Accidentally Defeating the Garbage Collector
+Weak References
+Reclaiming Memory
+Garbage Collector Modes
+Temporarily Suspending Garbage Collections
+Accidentally Defeating Compaction
+Forcing Garbage Collections
+Destructors and Finalization
+IDisposable
+Optional Disposal
+Boxing
+Boxing Nullable<T>
+Summary
+4. Delegates, Lambdas, and Events
+Delegate Types
+Creating a Delegate
+Multicast Delegates
+Invoking a Delegate
+Common Delegate Types
+Type Compatibility
+Behind the Syntax
+Anonymous Functions
+Captured Variables
+Lambdas and Expression Trees
+Events
+Standard Event Delegate Pattern
+Custom Add and Remove Methods
+Events and the Garbage Collector
+Events Versus Delegates
+Delegates Versus Interfaces
+Summary
+5. LINQ
+Query Expressions
+How Query Expressions Expand
+Supporting Query Expressions
+Deferred Evaluation
+LINQ, Generics, and IQueryable<T>
+Standard LINQ Operators
+Filtering
+Select
+SelectMany
+Chunking
+Ordering
+Containment Tests
+Specific Items and Subranges
+Aggregation
+Set Operations
+Whole-Sequence, Order-Preserving Operations
+Grouping
+Joins
+Conversion
+Sequence Generation
+Other LINQ Implementations
+Entity Framework Core
+Parallel LINQ (PLINQ)
+LINQ to XML
+Reactive Extensions
+Summary
+6. Reactive Extensions
+Fundamental Interfaces
+IObserver<T>
+IObservable<T>
+Publishing and Subscribing with Delegates
+Creating an Observable Source with Delegates
+Subscribing to an Observable Source with Delegates
+Sequence Builders
+Empty
+Never
+Return
+Throw
+Range
+Repeat
+Generate
+LINQ Queries
+Grouping Operators
+Join Operators
+SelectMany Operator
+Aggregation and Other Single-Value Operators
+Concat Operator
+Rx Query Operators
+Merge
+Windowing Operators
+The Scan Operator
+The Amb Operator
+DistinctUntilChanged
+Schedulers
+Specifying Schedulers
+Built-in Schedulers
+Subjects
+Subject<T>
+BehaviorSubject<T>
+ReplaySubject<T>
+AsyncSubject<T>
+Adaptation
+IEnumerable<T> and IAsyncEnumerable<T>
+.NET Events
+Asynchronous APIs
+Timed Operations
+Interval
+Timer
+Timestamp
+TimeInterval
+Throttle
+Sample
+Timeout
+Windowing Operators
+Delay
+DelaySubscription
+Reaqtor—Rx as a Service
+Summary
+7. Assemblies
+Anatomy of an Assembly
+.NET Metadata
+Resources
+Multifile Assemblies
+Other PE Features
+Type Identity
+Loading Assemblies
+Assembly Resolution
+Explicit Loading
+Isolation and Plugins with AssemblyLoadContext
+Assembly Names
+Strong Names
+Version
+Culture
+Protection
+Summary
+8. Attributes
+Applying Attributes
+Attribute Targets
+Compiler-Handled Attributes
+CLR-Handled Attributes
+Defining and Consuming Attributes
+Attribute Types
+Retrieving Attributes
+Summary
+9. Memory Efficiency
+(Don’t) Copy That
+Representing Sequential Elements with Span<T>
+Utility Methods
+Stack Only
+Representing Sequential Elements with Memory<T>
+ReadOnlySequence<T>
+Processing Data Streams with Pipelines
+Processing JSON in ASP.NET Core
+Summary
+About the Author

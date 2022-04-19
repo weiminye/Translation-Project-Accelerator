@@ -1,70 +1,11 @@
-# Translation-Project-Accelerator
-
-Currently a prototype.
-
-# How to run it
-
-1. Create a `TigerGraph` Database at `Cloud` or `local`
-2. Change the below connection information at `init_data.py` and `/server/app.py`
-   ```
-   server = 'https://{your TigerGraph Server}'
-   ```
-3. Create your virtualenv and activate it.
-4. Install the required referrences with `requirements.txt`
-   ```
-    pip install -r requirements.txt
-   ```
-5. Install `Spacy` model
-   ```
-   python -m spacy download en_core_web_sm
-   ```
-6. Run `init_data.py` to insert init data into `TigerGraph` database.
-   ```
-   python init_data.py
-   ```
-7. Create and install query at your `TigerGraph` database with `my_custom.tg_jaccard_nbor_ss.gsql`, Note: the query name MUST be `tg_jaccard_nbor_ss`
-8. go to `./server` directory and run below command to start backend server
-   ```
-    flask run
-   ```
-9. go to `./client` directory and run below command to start frontend server
-   ```
-    yarn start
-   ```
-10. Open your browser (recommend Chrome) to vist http://localhost:8000/
-11. Enjoy!
-
-# Screenshots
-## Find Matched Translator
-
-<img src="Screenshot-Find-Matched-Translator.png" width='800'/>
-<img src="Screenshot-Find-Matched-Translator-Result.png" width='800'/>
-
-## Help in Translation
-
-<img src="Screenshot-Help-in-Translation.png" width='800'/>
-
-# Test Data for Demo
-
-## Find Matched Translator
-
-Book name:
-
-```
-C# 10 in a Nutshell
-```
-
-Table of contents:
-
-```
 Preface
 Intended Audience
 How This Book Is Organized
 What You Need to Use This Book
 Conventions Used in This Book
 Using Code Examples
+We’d Like to Hear from You
 O’Reilly Online Learning
-How to Contact Us
 Acknowledgments
 1. Introducing C# and .NET
 Object Orientation
@@ -75,9 +16,8 @@ CLRs, BCLs, and Runtimes
 Common Language Runtime
 Base Class Library
 Runtimes
-Niche Runtimes
+Legacy and Niche Runtimes
 A Brief History of C#
-What’s New in C# 10
 What’s New in C# 9.0
 What’s New in C# 8.0
 What’s New in C# 7.x
@@ -106,6 +46,7 @@ Arithmetic Operators
 Increment and Decrement Operators
 Specialized Operations on Integral Types
 8- and 16-Bit Integral Types
+Native-Sized Integers (C# 9)
 Special Float and Double Values
 double Versus decimal
 Real Number Rounding Errors
@@ -130,7 +71,7 @@ Parameters
 Ref Locals
 Ref Returns
 var—Implicitly Typed Local Variables
-Target-Typed new Expressions
+Target-Typed new Expressions (C# 9)
 Expressions and Operators
 Primary Expressions
 Void Expressions
@@ -149,9 +90,7 @@ Iteration Statements
 Jump Statements
 Miscellaneous Statements
 Namespaces
-File-Scoped Namespaces (C# 10)
 The using Directive
-The global using Directive (C# 10)
 using static
 Rules Within a Namespace
 Aliasing Types and Namespaces
@@ -227,7 +166,7 @@ Contravariance
 C# Generics Versus C++ Templates
 4. Advanced C#
 Delegates
-Writing Plug-In Methods with Delegates
+Writing Plug-in Methods with Delegates
 Instance and Static Method Targets
 Multicast Delegates
 Generic Delegate Types
@@ -239,7 +178,7 @@ Standard Event Pattern
 Event Accessors
 Event Modifiers
 Lambda Expressions
-Explicitly Specifying Lambda Parameter and Return Types
+Explicitly Specifying Lambda Parameter Types
 Capturing Outer Variables
 Lambda Expressions Versus Local Methods
 Anonymous Methods
@@ -280,7 +219,7 @@ ValueTuple.Create
 Deconstructing Tuples
 Equality Comparison
 The System.Tuple classes
-Records
+Records (C# 9)
 Background
 Defining a Record
 Nondestructive Mutation
@@ -291,18 +230,16 @@ Records and Equality Comparison
 Patterns
 var Pattern
 Constant Pattern
-Relational Patterns
-Pattern Combinators
+Relational Patterns (C# 9)
+Pattern Combinators (C# 9)
 Tuple and Positional Patterns
 Property Patterns
 Attributes
 Attribute Classes
 Named and Positional Attribute Parameters
 Applying Attributes to Assemblies and Backing Fields
-Applying Attributes to Lambda Expressions (C# 10)
 Specifying Multiple Attributes
 Caller Info Attributes
-CallerArgumentExpression (C# 10)
 Dynamic Binding
 Static Binding Versus Dynamic Binding
 Custom Binding
@@ -328,9 +265,8 @@ The Pointer-to-Member Operator
 The stackalloc Keyword
 Fixed-Size Buffers
 void*
-Native-Sized Integers
-Function Pointers
-[SkipLocalsInit]
+Function Pointers (C# 9)
+[SkipLocalsInit] (C# 9)
 Preprocessor Directives
 Conditional Attributes
 Pragma Warning
@@ -343,7 +279,7 @@ Type or Member Cross-References
 .NET Standard 2.0
 .NET Standard 2.1
 Older .NET Standards
-.NET Framework and .NET 6 Compatibility
+.NET Framework and .NET 5 Compatibility
 Runtime and C# Language Versions
 Reference Assemblies
 The CLR and BCL
@@ -370,7 +306,7 @@ Application Layers
 ASP.NET Core
 Windows Desktop
 UWP and WinUI 3
-MAUI
+Xamarin and Xamarin Forms
 6. .NET Fundamentals
 String and Text Handling
 Char
@@ -381,7 +317,7 @@ Text Encodings and Unicode
 Dates and Times
 TimeSpan
 DateTime and DateTimeOffset
-DateOnly and TimeOnly
+Dates and Time Zones
 DateTime and Time Zones
 DateTimeOffset and Time Zones
 TimeZoneInfo
@@ -410,7 +346,6 @@ BigInteger
 Half
 Complex
 Random
-BitOperations
 Enums
 Enum Conversions
 Enumerating Enum Values
@@ -524,9 +459,9 @@ Sequence→Element or Value
 Void→Sequence
 Filtering
 Where
-Take, TakeLast, Skip, and SkipLast
+Take and Skip
 TakeWhile and SkipWhile
-Distinct and DistinctBy
+Distinct
 Projecting
 Select
 SelectMany
@@ -537,10 +472,9 @@ Ordering
 OrderBy, OrderByDescending, ThenBy, and ThenByDescending
 Grouping
 GroupBy
-Chunk
 Set Operators
-Concat, Union, and UnionBy
-Intersect, Intersect By, Except, and ExceptBy
+Concat and Union
+Intersect and Except
 Conversion Methods
 OfType and Cast
 ToArray, ToList, ToDictionary, ToHashSet, and ToLookup
@@ -548,7 +482,6 @@ AsEnumerable and AsQueryable
 Element Operators
 First, Last, and Single
 ElementAt
-MinBy and MaxBy
 DefaultIfEmpty
 Aggregation Methods
 Count and LongCount
@@ -615,7 +548,6 @@ Working with JSON
 Utf8JsonReader
 Utf8JsonWriter
 JsonDocument
-JsonNode
 12. Disposal and Garbage Collection
 IDisposable, Dispose, and Close
 Standard Disposal Semantics
@@ -663,7 +595,7 @@ Enumerating the Available Counters
 Reading Performance Counter Data
 Creating Counters and Writing Performance Data
 The Stopwatch Class
-Cross-Platform Diagnostic Tools
+Cross-Platform Diagnostics Tools
 dotnet-counters
 dotnet-trace
 dotnet-dump
@@ -742,6 +674,10 @@ Path
 Special Folders
 Querying Volume Information
 Catching Filesystem Events
+File I/O in UWP
+Working with Directories
+Working with Files
+Obtaining Directories and Files
 OS Security
 Running in a Standard User Account
 Administrative Elevation and Virtualization
@@ -754,23 +690,26 @@ Working with View Accessors
 Network Architecture
 Addresses and Ports
 URIs
+Client-Side Classes
+WebClient
+WebRequest and WebResponse
 HttpClient
-GetAsync and Response Messages
-SendAsync and Request Messages
-Uploading Data and HttpContent
-HttpMessageHandler
 Proxies
 Authentication
+Exception Handling
+Working with HTTP
 Headers
 Query Strings
 Uploading Form Data
 Cookies
 Writing an HTTP Server
+Using FTP
 Using DNS
 Sending Mail with SmtpClient
 Using TCP
 Concurrency with TCP
 Receiving POP3 Mail with TCP
+TCP in UWP
 17. Assemblies
 What’s in an Assembly
 The Assembly Manifest
@@ -909,7 +848,6 @@ ThreadLocal<T>
 GetData and SetData
 AsyncLocal<T>
 Timers
-PeriodicTimer
 Multithreaded Timers
 Single-Threaded Timers
 22. Parallel Programming
@@ -958,7 +896,7 @@ Marshaling Classes and Structs
 In and Out Marshaling
 Calling Conventions
 Callbacks from Unmanaged Code
-Callbacks with Function Pointers
+Callbacks with Function Pointers (C# 9)
 Callbacks with Delegates
 Simulating a C Union
 Shared Memory
@@ -997,9 +935,3 @@ Cookbook Regular Expressions
 Recipes
 Regular Expressions Language Reference
 Index
-About the Authors
-```
-
-## Help in Translation
-
-No need

@@ -1,0 +1,907 @@
+Preface
+Where to find the code solutions
+Where to find the online chapters
+What this book covers
+What you need for this book
+Get in touch
+Share your thoughts
+Hello, C#! Welcome, .NET!
+Setting up your development environment
+Choosing the appropriate tool and application type for learning
+Pros and cons of the .NET Interactive Notebooks extension
+Using Visual Studio Code for cross-platform development
+Using GitHub Codespaces for development in the cloud
+Using Visual Studio for Mac for general development
+Using Visual Studio for Windows for general development
+What I used
+Deploying cross-platform
+Downloading and installing Visual Studio 2022 for Windows
+Microsoft Visual Studio for Windows keyboard shortcuts
+Downloading and installing Visual Studio Code
+Installing other extensions
+Understanding Microsoft Visual Studio Code versions
+Microsoft Visual Studio Code keyboard shortcuts
+Understanding .NET
+Understanding .NET Framework
+Understanding the Mono, Xamarin, and Unity projects
+Understanding .NET Core
+Understanding the journey to one .NET
+Understanding .NET support
+Understanding .NET Runtime and .NET SDK versions
+Removing old versions of .NET
+What is different about modern .NET?
+Windows development
+Web development
+Database development
+Themes of modern .NET
+Understanding .NET Standard
+.NET platforms and tools used by the book editions
+Understanding intermediate language
+Comparing .NET technologies
+Building console apps using Visual Studio 2022
+Managing multiple projects using Visual Studio 2022
+Writing code using Visual Studio 2022
+Compiling and running code using Visual Studio
+Understanding the compiler-generated folders and files
+Writing top-level programs
+Adding a second project using Visual Studio 2022
+Implicitly imported namespaces
+Building console apps using Visual Studio Code
+Managing multiple projects using Visual Studio Code
+Writing code using Visual Studio Code
+Compiling and running code using the dotnet CLI
+Adding a second project using Visual Studio Code
+Managing multiple files using Visual Studio Code
+Exploring code using .NET Interactive Notebooks
+Creating a notebook
+Writing and running code in a notebook
+Saving a notebook
+Adding Markdown and special commands to a notebook
+Executing code in multiple cells
+Using .NET Interactive Notebooks for the code in this book
+Reviewing the folders and files for projects
+Understanding the common folders and files
+Understanding the solution code on GitHub
+Making good use of the GitHub repository for this book
+Raising issues with the book
+Giving me feedback
+Downloading solution code from the GitHub repository
+Using Git with Visual Studio Code and the command line
+Cloning the book solution code repository
+Looking for help
+Reading Microsoft documentation
+Getting help for the dotnet tool
+Getting definitions of types and their members
+Looking for answers on Stack Overflow
+Searching for answers using Google
+Subscribing to the official .NET blog
+Watching Scott Hanselman's videos
+Practicing and exploring
+Exercise 1.1 – Test your knowledge
+Exercise 1.2 – Practice C# anywhere
+Exercise 1.3 – Explore topics
+Summary
+Speaking C#
+Introducing the C# language
+Understanding language versions and features
+C# 1.0
+C# 2.0
+C# 3.0
+C# 4.0
+C# 5.0
+C# 6.0
+C# 7.0
+C# 7.1
+C# 7.2
+C# 7.3
+C# 8
+C# 9
+C# 10
+Understanding C# standards
+Discovering your C# compiler versions
+How to output the SDK version
+Enabling a specific language version compiler
+Understanding C# grammar and vocabulary
+Showing the compiler version
+Understanding C# grammar
+Statements
+Comments
+Blocks
+Examples of statements and blocks
+Understanding C# vocabulary
+Comparing programming languages to human languages
+Changing the color scheme for C# syntax
+Help for writing correct code
+Importing namespaces
+Implicitly and globally importing namespaces
+Verbs are methods
+Nouns are types, variables, fields, and properties
+Revealing the extent of the C# vocabulary
+Working with variables
+Naming things and assigning values
+Literal values
+Storing text
+Understanding verbatim strings
+Storing numbers
+Storing whole numbers
+Exploring whole numbers
+Storing real numbers
+Writing code to explore number sizes
+Comparing double and decimal types
+Storing Booleans
+Storing any type of object
+Storing dynamic types
+Declaring local variables
+Specifying the type of a local variable
+Inferring the type of a local variable
+Using target-typed new to instantiate objects
+Getting and setting the default values for types
+Storing multiple values in an array
+Exploring more about console applications
+Displaying output to the user
+Formatting using numbered positional arguments
+Formatting using interpolated strings
+Understanding format strings
+Getting text input from the user
+Simplifying the usage of the console
+Getting key input from the user
+Passing arguments to a console app
+Setting options with arguments
+Handling platforms that do not support an API
+Practicing and exploring
+Exercise 2.1 – Test your knowledge
+Exercise 2.2 – Test your knowledge of number types
+Exercise 2.3 – Practice number sizes and ranges
+Exercise 2.4 – Explore topics
+Summary
+Controlling Flow, Converting Types, and Handling Exceptions
+Operating on variables
+Exploring unary operators
+Exploring binary arithmetic operators
+Assignment operators
+Exploring logical operators
+Exploring conditional logical operators
+Exploring bitwise and binary shift operators
+Miscellaneous operators
+Understanding selection statements
+Branching with the if statement
+Why you should always use braces with if statements
+Pattern matching with the if statement
+Branching with the switch statement
+Pattern matching with the switch statement
+Simplifying switch statements with switch expressions
+Understanding iteration statements
+Looping with the while statement
+Looping with the do statement
+Looping with the for statement
+Looping with the foreach statement
+Understanding how foreach works internally
+Casting and converting between types
+Casting numbers implicitly and explicitly
+Converting with the System.Convert type
+Rounding numbers
+Understanding the default rounding rules
+Taking control of rounding rules
+Converting from any type to a string
+Converting from a binary object to a string
+Parsing from strings to numbers or dates and times
+Errors using Parse
+Avoiding exceptions using the TryParse method
+Handling exceptions
+Wrapping error-prone code in a try block
+Catching all exceptions
+Catching specific exceptions
+Catching with filters
+Checking for overflow
+Throwing overflow exceptions with the checked statement
+Disabling compiler overflow checks with the unchecked statement
+Practicing and exploring
+Exercise 3.1 – Test your knowledge
+Exercise 3.2 – Explore loops and overflow
+Exercise 3.3 – Practice loops and operators
+Exercise 3.4 – Practice exception handling
+Exercise 3.5 – Test your knowledge of operators
+Exercise 3.6 – Explore topics
+Summary
+Writing, Debugging, and Testing Functions
+Writing functions
+Times table example
+Writing a times table function
+Writing a function that returns a value
+Converting numbers from cardinal to ordinal
+Calculating factorials with recursion
+Documenting functions with XML comments
+Using lambdas in function implementations
+Debugging during development
+Creating code with a deliberate bug
+Setting a breakpoint and start debugging
+Using Visual Studio 2022
+Using Visual Studio Code
+Navigating with the debugging toolbar
+Debugging windows
+Stepping through code
+Customizing breakpoints
+Logging during development and runtime
+Understanding logging options
+Instrumenting with Debug and Trace
+Writing to the default trace listener
+Configuring trace listeners
+Switching trace levels
+Adding packages to a project in Visual Studio Code
+Adding packages to a project in Visual Studio 2022
+Reviewing project packages
+Unit testing
+Understanding types of testing
+Creating a class library that needs testing
+Writing unit tests
+Running unit tests using Visual Studio Code
+Running unit tests using Visual Studio
+Fix the bug
+Throwing and catching exceptions in functions
+Understanding usage errors and execution errors
+Commonly thrown exceptions in functions
+Understanding the call stack
+Where to catch exceptions
+Rethrowing exceptions
+Implementing the tester-doer pattern
+Problems with the tester-doer pattern
+Practicing and exploring
+Exercise 4.1 – Test your knowledge
+Exercise 4.2 – Practice writing functions with debugging and unit testing
+Exercise 4.3 – Explore topics
+Summary
+Building Your Own Types with Object-Oriented Programming
+Talking about OOP
+Building class libraries
+Creating a class library
+Defining a class in a namespace
+Simplifying namespace declarations
+Understanding members
+Instantiating a class
+Referencing an assembly
+Importing a namespace to use a type
+Understanding objects
+Inheriting from System.Object
+Storing data within fields
+Defining fields
+Understanding access modifiers
+Setting and outputting field values
+Storing a value using an enum type
+Storing multiple values using an enum type
+Storing multiple values using collections
+Understanding generic collections
+Making a field static
+Making a field constant
+Making a field read-only
+Initializing fields with constructors
+Defining multiple constructors
+Writing and calling methods
+Returning values from methods
+Combining multiple returned values using tuples
+Language support for tuples
+Naming the fields of a tuple
+Inferring tuple names
+Deconstructing tuples
+Deconstructing types
+Defining and passing parameters to methods
+Overloading methods
+Passing optional and named parameters
+Naming parameter values when calling methods
+Controlling how parameters are passed
+Simplified out parameters
+Understanding ref returns
+Splitting classes using partial
+Controlling access with properties and indexers
+Defining read-only properties
+Defining settable properties
+Requiring properties to be set during instantiation
+Defining indexers
+Pattern matching with objects
+Creating and referencing a .NET 6 class library
+Defining flight passengers
+Enhancements to pattern matching in C# 9 or later
+Working with records
+Init-only properties
+Understanding records
+Positional data members in records
+Simplifying data members in records
+Practicing and exploring
+Exercise 5.1 – Test your knowledge
+Exercise 5.2 – Explore topics
+Summary
+Implementing Interfaces and Inheriting Classes
+Setting up a class library and console application
+More about methods
+Implementing functionality using methods
+Implementing functionality using operators
+Implementing functionality using local functions
+Raising and handling events
+Calling methods using delegates
+Defining and handling delegates
+Defining and handling events
+Making types safely reusable with generics
+Working with non-generic types
+Working with generic types
+Implementing interfaces
+Common interfaces
+Comparing objects when sorting
+Comparing objects using a separate class
+Implicit and explicit interface implementations
+Defining interfaces with default implementations
+Managing memory with reference and value types
+Defining reference and value types
+How reference and value types are stored in memory
+Equality of types
+Defining struct types
+Working with record struct types
+Releasing unmanaged resources
+Ensuring that Dispose is called
+Working with null values
+Making a value type nullable
+Understanding nullable reference types
+Enabling nullable and non-nullable reference types
+Declaring non-nullable variables and parameters
+Checking for null
+Checking for null in method parameters
+Inheriting from classes
+Extending classes to add functionality
+Hiding members
+Overriding members
+Inheriting from abstract classes
+Preventing inheritance and overriding
+Understanding polymorphism
+Casting within inheritance hierarchies
+Implicit casting
+Explicit casting
+Avoiding casting exceptions
+Inheriting and extending .NET types
+Inheriting exceptions
+Extending types when you can't inherit
+Using static methods to reuse functionality
+Using extension methods to reuse functionality
+Using an analyzer to write better code
+Suppressing warnings
+Fixing the code
+Understanding common StyleCop recommendations
+Practicing and exploring
+Exercise 6.1 – Test your knowledge
+Exercise 6.2 – Practice creating an inheritance hierarchy
+Exercise 6.3 – Explore topics
+Summary
+Packaging and Distributing .NET Types
+The road to .NET 6
+.NET Core 1.0
+.NET Core 1.1
+.NET Core 2.0
+.NET Core 2.1
+.NET Core 2.2
+.NET Core 3.0
+.NET Core 3.1
+.NET 5.0
+.NET 6.0
+Improving performance from .NET Core 2.0 to .NET 5
+Checking your .NET SDKs for updates
+Understanding .NET components
+Understanding assemblies, NuGet packages, and namespaces
+What is a namespace?
+Understanding dependent assemblies
+Understanding the Microsoft .NET project SDKs
+Understanding namespaces and types in assemblies
+Understanding NuGet packages
+Understanding frameworks
+Importing a namespace to use a type
+Relating C# keywords to .NET types
+Mapping C# aliases to .NET types
+Revealing the location of a type
+Sharing code with legacy platforms using .NET Standard
+Understanding defaults for class libraries with different SDKs
+Creating a .NET Standard 2.0 class library
+Controlling the .NET SDK
+Publishing your code for deployment
+Creating a console application to publish
+Understanding dotnet commands
+Creating new projects
+Getting information about .NET and its environment
+Managing projects
+Publishing a self-contained app
+Publishing a single-file app
+Reducing the size of apps using app trimming
+Enabling assembly-level trimming
+Enabling type-level and member-level trimming
+Decompiling .NET assemblies
+Decompiling using the ILSpy extension for Visual Studio 2022
+Decompiling using the ILSpy extension for Visual Studio Code
+No, you cannot technically prevent decompilation
+Packaging your libraries for NuGet distribution
+Referencing a NuGet package
+Fixing dependencies
+Packaging a library for NuGet
+Publishing a package to a public NuGet feed
+Publishing a package to a private NuGet feed
+Exploring NuGet packages with a tool
+Testing your class library package
+Porting from .NET Framework to modern .NET
+Could you port?
+Should you port?
+Differences between .NET Framework and modern .NET
+Understanding the .NET Portability Analyzer
+Understanding the .NET Upgrade Assistant
+Using non-.NET Standard libraries
+Working with preview features
+Requiring preview features
+Enabling preview features
+Generic mathematics
+Practicing and exploring
+Exercise 7.1 – Test your knowledge
+Exercise 7.2 – Explore topics
+Exercise 7.3 – Explore PowerShell
+Summary
+Working with Common .NET Types
+Working with numbers
+Working with big integers
+Working with complex numbers
+Understanding quaternions
+Working with text
+Getting the length of a string
+Getting the characters of a string
+Splitting a string
+Getting part of a string
+Checking a string for content
+Joining, formatting, and other string members
+Building strings efficiently
+Working with dates and times
+Specifying date and time values
+Globalization with dates and times
+Working with only a date or a time
+Pattern matching with regular expressions
+Checking for digits entered as text
+Regular expression performance improvements
+Understanding the syntax of a regular expression
+Examples of regular expressions
+Splitting a complex comma-separated string
+Storing multiple objects in collections
+Common features of all collections
+Improving performance by ensuring the capacity of a collection
+Understanding collection choices
+Lists
+Dictionaries
+Stacks
+Queues
+Sets
+Collection methods summary
+Working with lists
+Working with dictionaries
+Working with queues
+Sorting collections
+More specialized collections
+Working with a compact array of bit values
+Working with efficient lists
+Using immutable collections
+Good practice with collections
+Working with spans, indexes, and ranges
+Using memory efficiently using spans
+Identifying positions with the Index type
+Identifying ranges with the Range type
+Using indexes, ranges, and spans
+Working with network resources
+Working with URIs, DNS, and IP addresses
+Pinging a server
+Working with reflection and attributes
+Versioning of assemblies
+Reading assembly metadata
+Creating custom attributes
+Doing more with reflection
+Working with images
+Internationalizing your code
+Detecting and changing the current culture
+Practicing and exploring
+Exercise 8.1 – Test your knowledge
+Exercise 8.2 – Practice regular expressions
+Exercise 8.3 – Practice writing extension methods
+Exercise 8.4 – Explore topics
+Summary
+Working with Files, Streams, and Serialization
+Managing the filesystem
+Handling cross-platform environments and filesystems
+Managing drives
+Managing directories
+Managing files
+Managing paths
+Getting file information
+Controlling how you work with files
+Reading and writing with streams
+Understanding abstract and concrete streams
+Understanding storage streams
+Understanding function streams
+Understanding stream helpers
+Writing to text streams
+Writing to XML streams
+Disposing of file resources
+Simplifying disposal by using the using statement
+Compressing streams
+Compressing with the Brotli algorithm
+Encoding and decoding text
+Encoding strings as byte arrays
+Encoding and decoding text in files
+Serializing object graphs
+Serializing as XML
+Generating compact XML
+Deserializing XML files
+Serializing with JSON
+High-performance JSON processing
+Controlling JSON processing
+New JSON extension methods for working with HTTP responses
+Migrating from Newtonsoft to new JSON
+Practicing and exploring
+Exercise 9.1 – Test your knowledge
+Exercise 9.2 – Practice serializing as XML
+Exercise 9.3 – Explore topics
+Summary
+Working with Data Using Entity Framework Core
+Understanding modern databases
+Understanding legacy Entity Framework
+Using the legacy Entity Framework 6.3 or later
+Understanding Entity Framework Core
+Creating a console app for working with EF Core
+Using a sample relational database
+Using Microsoft SQL Server for Windows
+Downloading and installing SQL Server
+Creating the Northwind sample database for SQL Server
+Managing the Northwind sample database with Server Explorer
+Using SQLite
+Setting up SQLite for macOS
+Setting up SQLite for Windows
+Setting up SQLite for other OSes
+Creating the Northwind sample database for SQLite
+Managing the Northwind sample database with SQLiteStudio
+Setting up EF Core
+Choosing an EF Core database provider
+Connecting to a database
+Defining the Northwind database context class
+Defining EF Core models
+Using EF Core conventions to define the model
+Using EF Core annotation attributes to define the model
+Using the EF Core Fluent API to define the model
+Understanding data seeding with the Fluent API
+Building an EF Core model for the Northwind tables
+Defining the Category and Product entity classes
+Adding tables to the Northwind database context class
+Setting up the dotnet-ef tool
+Scaffolding models using an existing database
+Configuring preconvention models
+Querying EF Core models
+Filtering included entities
+Unicode characters in the Windows console
+Filtering and sorting products
+Getting the generated SQL
+Logging EF Core using a custom logging provider
+Filtering logs by provider-specific values
+Logging with query tags
+Pattern matching with Like
+Defining global filters
+Loading patterns with EF Core
+Eager loading entities
+Enabling lazy loading
+Explicit loading entities
+Manipulating data with EF Core
+Inserting entities
+Updating entities
+Deleting entities
+Pooling database contexts
+Working with transactions
+Controlling transactions using isolation levels
+Defining an explicit transaction
+Code First EF Core models
+Understanding migrations
+Practicing and exploring
+Exercise 10.1 – Test your knowledge
+Exercise 10.2 – Practice exporting data using different serialization formats
+Exercise 10.3 – Explore topics
+Exercise 10.4 – Explore NoSQL databases
+Summary
+Querying and Manipulating Data Using LINQ
+Writing LINQ expressions
+What makes LINQ?
+Building LINQ expressions with the Enumerable class
+Understanding deferred execution
+Filtering entities with Where
+Targeting a named method
+Simplifying the code by removing the explicit delegate instantiation
+Targeting a lambda expression
+Sorting entities
+Sorting by a single property using OrderBy
+Sorting by a subsequent property using ThenBy
+Declaring a query using var or a specified type
+Filtering by type
+Working with sets and bags using LINQ
+Using LINQ with EF Core
+Building an EF Core model
+Filtering and sorting sequences
+Projecting sequences into new types
+Joining and grouping sequences
+Joining sequences
+Group-joining sequences
+Aggregating sequences
+Sweetening LINQ syntax with syntactic sugar
+Using multiple threads with parallel LINQ
+Creating an app that benefits from multiple threads
+Using Windows
+Using macOS
+For all operating systems
+Creating your own LINQ extension methods
+Trying the chainable extension method
+Trying the mode and median methods
+Working with LINQ to XML
+Generating XML using LINQ to XML
+Reading XML using LINQ to XML
+Practicing and exploring
+Exercise 11.1 – Test your knowledge
+Exercise 11.2 – Practice querying with LINQ
+Exercise 11.3 – Explore topics
+Summary
+Improving Performance and Scalability Using Multitasking
+Understanding processes, threads, and tasks
+Monitoring performance and resource usage
+Evaluating the efficiency of types
+Monitoring performance and memory using diagnostics
+Useful members of the Stopwatch and Process types
+Implementing a Recorder class
+Measuring the efficiency of processing strings
+Monitoring performance and memory using Benchmark.NET
+Running tasks asynchronously
+Running multiple actions synchronously
+Running multiple actions asynchronously using tasks
+Starting tasks
+Waiting for tasks
+Using wait methods with tasks
+Continuing with another task
+Nested and child tasks
+Wrapping tasks around other objects
+Synchronizing access to shared resources
+Accessing a resource from multiple threads
+Applying a mutually exclusive lock to a conch
+Understanding the lock statement
+Avoiding deadlocks
+Synchronizing events
+Making CPU operations atomic
+Applying other types of synchronization
+Understanding async and await
+Improving responsiveness for console apps
+Improving responsiveness for GUI apps
+Improving scalability for web applications and web services
+Common types that support multitasking
+Using await in catch blocks
+Working with async streams
+Practicing and exploring
+Exercise 12.1 – Test your knowledge
+Exercise 12.2 – Explore topics
+Summary
+Introducing Practical Applications of C# and .NET
+Understanding app models for C# and .NET
+Building websites using ASP.NET Core
+Building websites using a content management system
+Building web applications using SPA frameworks
+Building web and other services
+Building mobile and desktop apps
+Alternatives to .NET MAUI
+Understanding Uno Platform
+Understanding Avalonia
+New features in ASP.NET Core
+ASP.NET Core 1.0
+ASP.NET Core 1.1
+ASP.NET Core 2.0
+ASP.NET Core 2.1
+ASP.NET Core 2.2
+ASP.NET Core 3.0
+ASP.NET Core 3.1
+Blazor WebAssembly 3.2
+ASP.NET Core 5.0
+ASP.NET Core 6.0
+Building Windows-only desktop apps
+Understanding legacy Windows application platforms
+Understanding modern .NET support for legacy Windows platforms
+Structuring projects
+Structuring projects in a solution or workspace
+Using other project templates
+Installing additional template packs
+Building an entity data model for the Northwind database
+Creating a class library for entity models using SQLite
+Improving the class-to-table mapping
+Creating a class library for a Northwind database context
+Creating a class library for entity models using SQL Server
+Practicing and exploring
+Exercise 13.1 – Test your knowledge
+Exercise 13.2 – Explore topics
+Summary
+Building Websites Using ASP.NET Core Razor Pages
+Understanding web development
+Understanding HTTP
+Understanding the components of a URL
+Assigning port numbers for projects in this book
+Using Google Chrome to make HTTP requests
+Understanding client-side web development technologies
+Understanding ASP.NET Core
+Classic ASP.NET versus modern ASP.NET Core
+Creating an empty ASP.NET Core project
+Testing and securing the website
+Enabling stronger security and redirect to a secure connection
+Controlling the hosting environment
+Separating configuration for services and pipeline
+Enabling a website to serve static content
+Creating a folder for static files and a web page
+Enabling static and default files
+Exploring ASP.NET Core Razor Pages
+Enabling Razor Pages
+Adding code to a Razor Page
+Using shared layouts with Razor Pages
+Using code-behind files with Razor Pages
+Using Entity Framework Core with ASP.NET Core
+Configure Entity Framework Core as a service
+Manipulating data using Razor Pages
+Enabling a model to insert entities
+Defining a form to insert a new supplier
+Injecting a dependency service into a Razor Page
+Using Razor class libraries
+Creating a Razor class library
+Disabling compact folders for Visual Studio Code
+Implementing the employees feature using EF Core
+Implementing a partial view to show a single employee
+Using and testing a Razor class library
+Configuring services and the HTTP request pipeline
+Understanding endpoint routing
+Configuring endpoint routing
+Reviewing the endpoint routing configuration in our project
+Registering services in the ConfigureServices method
+Setting up the HTTP request pipeline in the Configure method
+Summarizing key middleware extension methods
+Visualizing the HTTP pipeline
+Implementing an anonymous inline delegate as middleware
+Practicing and exploring
+Exercise 14.1 – Test your knowledge
+Exercise 14.2 – Practice building a data-driven web page
+Exercise 14.3 – Practice building web pages for console apps
+Exercise 14.4 – Explore topics
+Summary
+Building Websites Using the Model-View-Controller Pattern
+Setting up an ASP.NET Core MVC website
+Creating an ASP.NET Core MVC website
+Creating the authentication database for SQL Server LocalDB
+Exploring the default ASP.NET Core MVC website
+Understanding visitor registration
+Reviewing an MVC website project structure
+Reviewing the ASP.NET Core Identity database
+Exploring an ASP.NET Core MVC website
+Understanding ASP.NET Core MVC initialization
+Understanding the default MVC route
+Understanding controllers and actions
+Understanding the ControllerBase class
+Understanding the Controller class
+Understanding the responsibilities of a controller
+Understanding the view search path convention
+Understanding logging
+Understanding filters
+Using a filter to secure an action method
+Enabling role management and creating a role programmatically
+Using a filter to cache a response
+Using a filter to define a custom route
+Understanding entity and view models
+Understanding views
+Customizing an ASP.NET Core MVC website
+Defining a custom style
+Setting up the category images
+Understanding Razor syntax
+Defining a typed view
+Reviewing the customized home page
+Passing parameters using a route value
+Understanding model binders in more detail
+Disambiguating action methods
+Passing a route parameter
+Passing a form parameter
+Validating the model
+Understanding view helper methods
+Querying a database and using display templates
+Improving scalability using asynchronous tasks
+Making controller action methods asynchronous
+Practicing and exploring
+Exercise 15.1 – Test your knowledge
+Exercise 15.2 – Practice implementing MVC by implementing a category detail page
+Exercise 15.3 – Practice improving scalability by understanding and implementing async action methods
+Exercise 15.4 – Practice unit testing MVC controllers
+Exercise 15.5 – Explore topics
+Summary
+Building and Consuming Web Services
+Building web services using ASP.NET Core Web API
+Understanding web service acronyms
+Understanding Windows Communication Foundation (WCF)
+An alternative to WCF
+Understanding HTTP requests and responses for Web APIs
+Creating an ASP.NET Core Web API project
+Reviewing the web service's functionality
+Creating a web service for the Northwind database
+Creating data repositories for entities
+Implementing a Web API controller
+Understanding action method return types
+Configuring the customer repository and Web API controller
+Specifying problem details
+Controlling XML serialization
+Documenting and testing web services
+Testing GET requests using a browser
+Testing HTTP requests with the REST Client extension
+Making GET requests using REST Client
+Making other requests using REST Client
+Understanding Swagger
+Testing requests with Swagger UI
+Enabling HTTP logging
+Consuming web services using HTTP clients
+Understanding HttpClient
+Configuring HTTP clients using HttpClientFactory
+Getting customers as JSON in the controller
+Enabling Cross-Origin Resource Sharing
+Implementing advanced features for web services
+Implementing a Health Check API
+Implementing Open API analyzers and conventions
+Implementing transient fault handling
+Adding security HTTP headers
+Building web services using minimal APIs
+Building a weather service using minimal APIs
+Testing the minimal weather service
+Adding weather forecasts to the Northwind website home page
+Practicing and exploring
+Exercise 16.1 – Test your knowledge
+Exercise 16.2 – Practice creating and deleting customers with HttpClient
+Exercise 16.3 – Explore topics
+Summary
+Building User Interfaces Using Blazor
+Understanding Blazor
+JavaScript and friends
+Silverlight – C# and .NET using a plugin
+WebAssembly – a target for Blazor
+Understanding Blazor hosting models
+Understanding Blazor components
+What is the difference between Blazor and Razor?
+Comparing Blazor project templates
+Reviewing the Blazor Server project template
+Understanding CSS and JavaScript isolation
+Understanding Blazor routing to page components
+How to define a routable page component
+How to navigate Blazor routes
+How to pass route parameters
+Understanding base component classes
+How to use the navigation link component with routes
+Running the Blazor Server project template
+Reviewing the Blazor WebAssembly project template
+Building components using Blazor Server
+Defining and testing a simple component
+Making the component a routable page component
+Getting entities into a component
+Abstracting a service for a Blazor component
+Defining forms using the EditForm component
+Building and using a customer form component
+Testing the customer form component
+Building components using Blazor WebAssembly
+Configuring the server for Blazor WebAssembly
+Configuring the client for Blazor WebAssembly
+Testing the Blazor WebAssembly components and service
+Improving Blazor WebAssembly apps
+Enabling Blazor WebAssembly AOT
+Exploring Progressive Web App support
+Implementing offline support for PWAs
+Understanding the browser compatibility analyzer for Blazor WebAssembly
+Sharing Blazor components in a class library
+Interop with JavaScript
+Libraries of Blazor components
+Practicing and exploring
+Exercise 17.1 – Test your knowledge
+Exercise 17.2 – Practice by creating a times table component
+Exercise 17.3 – Practice by creating a country navigation item
+Exercise 17.4 – Explore topics
+Summary
+Epilogue
+Next steps on your C# and .NET learning journey
+Polishing your skills with design guidelines
+Books to take your learning further
+.NET MAUI delayed
+Next edition coming November 2022
+Good luck!
+Share your thoughts
+Index

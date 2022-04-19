@@ -1,0 +1,139 @@
+Preface
+Who Should Read This Book
+Why I Wrote This Book
+Navigating This Book
+Online Resources
+Conventions Used in This Book
+Using Code Examples
+O’Reilly Online Learning
+How to Contact Us
+Acknowledgments
+Concurrency: An Overview
+Introduction to Concurrency
+Introduction to Asynchronous Programming
+Introduction to Parallel Programming
+Introduction to Reactive Programming (Rx)
+Introduction to Dataflows
+Introduction to Multithreaded Programming
+Collections for Concurrent Applications
+Modern Design
+Summary of Key Technologies
+Async Basics
+2.1. Pausing for a Period of Time
+2.2. Returning Completed Tasks
+2.3. Reporting Progress
+2.4. Waiting for a Set of Tasks to Complete
+2.5. Waiting for Any Task to Complete
+2.6. Processing Tasks as They Complete
+2.7. Avoiding Context for Continuations
+2.8. Handling Exceptions from async Task Methods
+2.9. Handling Exceptions from async void Methods
+2.10. Creating a ValueTask
+2.11. Consuming a ValueTask
+Asynchronous Streams
+Asynchronous Streams and Task<T>
+Asynchronous Streams and IEnumerable<T>
+Asynchronous Streams and Task<IEnumerable<T>>
+Asynchronous Streams and IObservable<T>
+Summary
+3.1. Creating Asynchronous Streams
+3.2. Consuming Asynchronous Streams
+3.3. Using LINQ with Asynchronous Streams
+3.4. Asynchronous Streams and Cancellation
+Parallel Basics
+4.1. Parallel Processing of Data
+4.2. Parallel Aggregation
+4.3. Parallel Invocation
+4.4. Dynamic Parallelism
+4.5. Parallel LINQ
+Dataflow Basics
+5.1. Linking Blocks
+5.2. Propagating Errors
+5.3. Unlinking Blocks
+5.4. Throttling Blocks
+5.5. Parallel Processing with Dataflow Blocks
+5.6. Creating Custom Blocks
+System.Reactive Basics
+6.1. Converting .NET Events
+6.2. Sending Notifications to a Context
+6.3. Grouping Event Data with Windows and Buffers
+6.4. Taming Event Streams with Throttling and Sampling
+6.5. Timeouts
+Testing
+7.1. Unit Testing async Methods
+7.2. Unit Testing async Methods Expected to Fail
+7.3. Unit Testing async void Methods
+7.4. Unit Testing Dataflow Meshes
+7.5. Unit Testing System.Reactive Observables
+7.6. Unit Testing System.Reactive Observables with Faked Scheduling
+Interop
+8.1. Async Wrappers for “Async” Methods with “Completed” Events
+8.2. Async Wrappers for “Begin/End” Methods
+8.3. Async Wrappers for Anything
+8.4. Async Wrappers for Parallel Code
+8.5. Async Wrappers for System.Reactive Observables
+8.6. System.Reactive Observable Wrappers for async Code
+8.7. Asynchronous Streams and Dataflow Meshes
+8.8. System.Reactive Observables and Dataflow Meshes
+8.9. Converting System.Reactive Observables to Asynchronous Streams
+Collections
+9.1. Immutable Stacks and Queues
+9.2. Immutable Lists
+9.3. Immutable Sets
+9.4. Immutable Dictionaries
+9.5. Threadsafe Dictionaries
+9.6. Blocking Queues
+9.7. Blocking Stacks and Bags
+9.8. Asynchronous Queues
+9.9. Throttling Queues
+9.10. Sampling Queues
+9.11. Asynchronous Stacks and Bags
+9.12. Blocking/Asynchronous Queues
+Cancellation
+10.1. Issuing Cancellation Requests
+10.2. Responding to Cancellation Requests by Polling
+10.3. Canceling Due to Timeouts
+10.4. Canceling async Code
+10.5. Canceling Parallel Code
+10.6. Canceling System.Reactive Code
+10.7. Canceling Dataflow Meshes
+10.8. Injecting Cancellation Requests
+10.9. Interop with Other Cancellation Systems
+Functional-Friendly OOP
+11.1. Async Interfaces and Inheritance
+11.2. Async Construction: Factories
+11.3. Async Construction: The Asynchronous Initialization Pattern
+11.4. Async Properties
+11.5. Async Events
+11.6. Async Disposal
+Synchronization
+12.1. Blocking Locks
+12.2. Async Locks
+12.3. Blocking Signals
+12.4. Async Signals
+12.5. Throttling
+Scheduling
+13.1. Scheduling Work to the Thread Pool
+13.2. Executing Code with a Task Scheduler
+13.3. Scheduling Parallel Code
+13.4. Dataflow Synchronization Using Schedulers
+Scenarios
+14.1. Initializing Shared Resources
+14.2. System.Reactive Deferred Evaluation
+14.3. Asynchronous Data Binding
+14.4. Implicit State
+14.5. Identical Synchronous and Asynchronous Code
+14.6. Railway Programming with Dataflow Meshes
+14.7. Throttling Progress Updates
+Legacy Platform Support
+Legacy Platform Support for Async
+Legacy Platform Support for Dataflow
+Legacy Platform Support for System.Reactive
+Recognizing and Interpreting Asynchronous Patterns
+Task-Based Asynchronous Pattern (TAP)
+Asynchronous Programming Model (APM)
+Event-Based Asynchronous Programming (EAP)
+Continuation Passing Style (CPS)
+Custom Async Patterns
+ISynchronizeInvoke
+Index

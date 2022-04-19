@@ -1,0 +1,227 @@
+Preface
+Intended Audience
+How This Book Is Organized
+What You Need to Use This Book
+Conventions Used in This Book
+Using Code Examples
+O’Reilly Online Learning
+How to Contact Us
+Acknowledgments
+1. Introducing C# and .NET
+Object Orientation
+Type Safety
+Memory Management
+Platform Support
+CLRs, BCLs, and Runtimes
+Common Language Runtime
+Base Class Library
+Runtimes
+Niche Runtimes
+A Brief History of C#
+What’s New in C# 10
+What’s New in C# 9.0
+What’s New in C# 8.0
+What’s New in C# 7.x
+What’s New in C# 6.0
+What’s New in C# 5.0
+What’s New in C# 4.0
+What’s New in C# 3.0
+What’s New in C# 2.0
+2. C# Language Basics
+A First C# Program
+Compilation
+Syntax
+Identifiers and Keywords
+Literals, Punctuators, and Operators
+Comments
+Type Basics
+Predefined Type Examples
+Custom Types
+Types and Conversions
+Value Types Versus Reference Types
+Predefined Type Taxonomy
+Numeric Types
+Numeric Literals
+Numeric Conversions
+Arithmetic Operators
+Increment and Decrement Operators
+Specialized Operations on Integral Types
+8- and 16-Bit Integral Types
+Special Float and Double Values
+double Versus decimal
+Real Number Rounding Errors
+Boolean Type and Operators
+bool Conversions
+Equality and Comparison Operators
+Conditional Operators
+Strings and Characters
+Char Conversions
+String Type
+Arrays
+Default Element Initialization
+Indices and Ranges
+Multidimensional Arrays
+Simplified Array Initialization Expressions
+Bounds Checking
+Variables and Parameters
+The Stack and the Heap
+Definite Assignment
+Default Values
+Parameters
+Ref Locals
+Ref Returns
+var—Implicitly Typed Local Variables
+Target-Typed new Expressions
+Expressions and Operators
+Primary Expressions
+Void Expressions
+Assignment Expressions
+Operator Precedence and Associativity
+Operator Table
+Null Operators
+Null-Coalescing Operator
+Null-Coalescing Assignment Operator
+Null-Conditional Operator
+Statements
+Declaration Statements
+Expression Statements
+Selection Statements
+Iteration Statements
+Jump Statements
+Miscellaneous Statements
+Namespaces
+File-Scoped Namespaces (C# 10)
+The using Directive
+The global using Directive (C# 10)
+using static
+Rules Within a Namespace
+Aliasing Types and Namespaces
+Advanced Namespace Features
+3. Creating Types in C#
+Classes
+Fields
+Constants
+Methods
+Instance Constructors
+Deconstructors
+Object Initializers
+The this Reference
+Properties
+Indexers
+Static Constructors
+Static Classes
+Finalizers
+Partial Types and Methods
+The nameof operator
+Inheritance
+Polymorphism
+Casting and Reference Conversions
+Virtual Function Members
+Abstract Classes and Abstract Members
+Hiding Inherited Members
+Sealing Functions and Classes
+The base Keyword
+Constructors and Inheritance
+Overloading and Resolution
+The object Type
+Boxing and Unboxing
+Static and Runtime Type Checking
+The GetType Method and typeof Operator
+The ToString Method
+Object Member Listing
+Structs
+Struct Construction Semantics
+Read-Only Structs and Functions
+Ref Structs
+Access Modifiers
+Examples
+Friend Assemblies
+Accessibility Capping
+Restrictions on Access Modifiers
+Interfaces
+Extending an Interface
+Explicit Interface Implementation
+Implementing Interface Members Virtually
+Reimplementing an Interface in a Subclass
+Interfaces and Boxing
+Default Interface Members
+Enums
+Enum Conversions
+Flags Enums
+Enum Operators
+Type-Safety Issues
+Nested Types
+Generics
+Generic Types
+Why Generics Exist
+Generic Methods
+Declaring Type Parameters
+typeof and Unbound Generic Types
+The default Generic Value
+Generic Constraints
+Subclassing Generic Types
+Self-Referencing Generic Declarations
+Static Data
+Type Parameters and Conversions
+Covariance
+Contravariance
+C# Generics Versus C++ Templates
+4. Advanced C#
+Delegates
+Writing Plug-In Methods with Delegates
+Instance and Static Method Targets
+Multicast Delegates
+Generic Delegate Types
+The Func and Action Delegates
+Delegates Versus Interfaces
+Delegate Compatibility
+Events
+Standard Event Pattern
+Event Accessors
+Event Modifiers
+Lambda Expressions
+Explicitly Specifying Lambda Parameter and Return Types
+Capturing Outer Variables
+Lambda Expressions Versus Local Methods
+Anonymous Methods
+try Statements and Exceptions
+The catch Clause
+The finally Block
+Throwing Exceptions
+Key Properties of System.Exception
+Common Exception Types
+The TryXXX Method Pattern
+Alternatives to Exceptions
+Enumeration and Iterators
+Enumeration
+Collection Initializers
+Iterators
+Iterator Semantics
+Composing Sequences
+Nullable Value Types
+Nullable<T> Struct
+Implicit and Explicit Nullable Conversions
+Boxing and Unboxing Nullable Values
+Operator Lifting
+bool? with & and | Operators
+Nullable Value Types and Null Operators
+Scenarios for Nullable Value Types
+Alternatives to Nullable Value Types
+Nullable Reference Types
+The Null-Forgiving Operator
+Separating the Annotation and Warning Contexts
+Treating Nullable Warnings as Errors
+Extension Methods
+Extension Method Chaining
+Ambiguity and Resolution
+Anonymous Types
+Tuples
+Naming Tuple Elements
+ValueTuple.Create
+Deconstructing Tuples
+Equality Comparison
+The System.Tuple classes
+Records
+Background
+Defining a Record
+Nondestructive Mutation

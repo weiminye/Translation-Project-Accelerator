@@ -1,0 +1,494 @@
+Preface
+Who this book is for
+What this book covers
+To get the most out of this book
+Get in touch
+Understanding the Importance of Software Architecture
+What is software architecture?
+Creating an Azure account
+Software development process models
+Reviewing traditional software development process models
+Understanding the waterfall model principles
+Analyzing the incremental model
+Understanding agile software development process models
+Lean software development
+Extreme Programming
+Getting into the Scrum model
+Scaling agile throughout a company
+Gathering the right information to design high-quality software
+Understanding the requirements gathering process
+Detecting exact user needs
+Analyzing requirements
+Writing the specifications
+Understanding the principles of scalability, robustness, security, and performance
+Reviewing the specification
+Using design techniques as a helpful tool
+Design Thinking
+Design Sprint
+Common cases where the requirements gathering process impacts system results
+Case 1 – my website is too slow to open that page!
+Understanding backend caching
+Applying asynchronous programming
+Dealing with object allocation
+Getting better database access
+Case 2 – the user’s needs are not properly implemented
+Case 3 – the usability of the system does not meet the user’s needs
+Case study – introducing World Wild Travel Club
+Understanding user needs and system requirements
+Summary
+Questions
+Further reading
+Non-Functional Requirements
+Technical requirements
+Enabling scalability, availability, and resiliency with Azure and .NET 6
+Creating a scalable web app in Azure
+Vertical scaling (scaling up)
+Horizontal scaling (scaling out)
+Creating a scalable web app with .NET 6
+Performance issues that need to be considered when programming in C#
+String concatenation
+Exceptions
+Multithreading environments for better results – dos and don’ts
+Usability – why inserting data takes too much time
+Designing fast selection logic
+Selecting from a huge number of items
+The fantastic world of interoperability with .NET 6
+Creating a service in Linux
+Achieving security by design
+List of practices for achieving a safe architecture
+Authentication
+Sensitive data
+Web security
+Book use case – understanding the main types of .NET projects
+Summary
+Questions
+Further reading
+Documenting Requirements with Azure DevOps
+Technical requirements
+Introducing Azure DevOps
+Organizing your work using Azure DevOps
+Azure DevOps repository
+Package feeds
+Test Plans
+Pipelines
+Managing system requirements in Azure DevOps
+Epic work items
+Feature work items
+Product Backlog items/User Story work items
+Use case – presenting use cases in Azure DevOps
+Summary
+Questions
+Further reading
+Deciding on the Best Cloud-Based Solution
+Technical requirements
+Different software deployment models
+IaaS and Azure opportunities
+Security responsibility in IaaS
+PaaS – a world of opportunities for developers
+Web apps
+SQL databases
+Azure Cognitive Services
+SaaS – just sign in and get started!
+Understanding what serverless means
+Why are hybrid applications so useful in many cases?
+Book use case – which is the best cloud solution?
+Summary
+Questions
+Further reading
+Applying a Microservice Architecture to Your Enterprise Application
+Technical requirements
+What are microservices?
+Microservices and the evolution of the concept of modules
+Microservices design principles
+The independence of design choices
+Independence from the deployment environment
+Loose coupling
+No chained requests/responses
+Containers and Docker
+When do microservices help?
+Layered architectures and microservices
+The presentation layer
+When is it worth considering microservice architectures?
+How does .NET deal with microservices?
+.NET communication facilities
+Resilient task execution
+Using generic hosts
+Visual Studio support for Docker
+Analyzing the Docker file
+Publishing the project
+Azure and Visual Studio support for microservice orchestration
+Which tools are needed to manage microservices?
+Defining your private Docker registry in Azure
+Summary
+Questions
+Further reading
+Azure Kubernetes Service
+Technical requirements
+Kubernetes basics
+.yaml files
+ReplicaSets and Deployments
+StatefulSets
+Services
+Ingresses
+Interacting with Azure Kubernetes clusters
+Using Kubectl
+Deploying the demo Guestbook application
+Advanced Kubernetes concepts
+Requiring permanent storage
+Kubernetes secrets
+Liveness and readiness checks
+Autoscaling
+Helm – Installing an Ingress Controller
+Summary
+Questions
+Further reading
+Interacting with Data in C# – Entity Framework Core
+Technical requirements
+Understanding ORM basics
+Configuring Entity Framework Core
+Defining DB entities
+Defining the mapped collections
+Completing the mapping configuration
+Entity Framework Core migrations
+Understanding stored procedures and direct SQL commands
+Compiled models
+Querying and updating data with Entity Framework Core
+Returning data to the presentation layer
+Issuing direct SQL commands
+Handling transactions
+Deploying your data layer
+Understanding Entity Framework Core advanced features
+Summary
+Questions
+Further reading
+How to Choose Your Data Storage in the Cloud
+Technical requirements
+Understanding the different repositories for different purposes
+Relational databases
+NoSQL databases
+Redis
+Azure storage accounts
+Choosing between SQL or NoSQL document-oriented databases
+Azure Cosmos DB – an opportunity to manage a multi-continental database
+Creating an Azure Cosmos DB account
+Creating an Azure Cosmos container
+Accessing Azure Cosmos data
+Defining database consistency
+The Cosmos DB client
+The Cosmos DB Entity Framework Core provider
+Use case – storing data
+Implementing the destinations/packages database with Cosmos DB
+Summary
+Questions
+Further reading
+Working with Azure Functions
+Technical requirements
+Understanding the Azure Functions app
+Consumption plan
+Premium plan
+App Service plan
+Programming Azure Functions using C#
+Listing Azure Functions templates
+Maintaining Azure Functions
+Azure Durable Functions
+Azure Functions roadmap
+Use case – Implementing Azure Functions to send emails
+First step – Creating Azure queue storage
+Second step – Creating the function to send emails
+Third step – Creating the queue trigger function
+Summary
+Questions
+Further reading
+Design Patterns and .NET 6 Implementation
+Technical requirements
+Understanding design patterns and their purpose
+Builder pattern
+Factory pattern
+Singleton pattern
+Proxy pattern
+Command pattern
+Publisher/Subscriber pattern
+Dependency Injection pattern
+Understanding the available design patterns in .NET 6
+Summary
+Questions
+Further reading
+Understanding the Different Domains in Software Solutions
+Technical requirements
+What are software domains?
+Understanding domain-driven design
+Entities and value objects
+Layers and the Onion architecture
+Aggregates
+The repository and Unit of Work patterns
+DDD entities and Entity Framework Core
+Command Query Responsibility Segregation (CQRS) pattern
+Command handlers and domain events
+Event sourcing
+Use case – understanding the domains of the use case
+Summary
+Questions
+Further reading
+Implementing Code Reusability in C# 10
+Technical requirements
+Understanding the principles of code reusability
+What is not code reuse?
+What is code reuse?
+Reusability in the development life cycle
+Using .NET 6 for code reuse
+Creating a reusable class library
+How does C# deal with code reuse?
+Object-oriented analysis
+Generics
+What if the code is not reusable?
+I have my libraries. How do I promote them?
+Documenting .NET libraries using DocFX
+Documenting a Web API using Swagger
+Use case – reusing code as a fast way to deliver good and safe software
+Summary
+Questions
+Further reading
+Applying Service-Oriented Architectures with .NET
+Technical requirements
+Understanding the principles of the SOA approach
+SOAP web services
+SOAP specifications
+Difficulties associated with the standard
+REST web services
+Service type compatibility rules
+REST and native HTTP features
+Example of methods in the REST language
+The OpenAPI standard
+REST service authorization and authentication
+How does .NET 6 deal with SOA?
+SOAP client support
+gRPC support
+A short introduction to ASP.NET Core
+Implementing REST services with ASP.NET Core
+ASP.NET Core service authorization
+ASP.NET Core support for OpenAPI
+.NET HTTP clients
+Use case – exposing WWTravelClub packages
+Summary
+Questions
+Further reading
+Implementing Microservices with .NET
+Technical requirements
+Communication and data serialization
+Efficient and flexible binary serialization
+The ProtoBuf language
+ProtoBuf serialization
+Efficient and flexible RPC
+Reliable data-driven asynchronous communication
+Distributed transactions
+Implementing worker microservices with ASP.NET core
+The problem and the architecture
+The storage layer
+The application layer
+Processing the queued requests
+Testing the GrpcMicroservice project with a fake purchase requests generator
+Implementing microservices with .NET worker services and message brokers
+Installing RabbitMQ
+RabbitMQ basics
+Replacing internal queues with RabbitMQ
+Summary
+Questions
+Further reading
+Presenting ASP.NET Core MVC
+Technical requirements
+Understanding the presentation layers of web applications
+Understanding the basics of ASP.NET Core
+ASP.NET Core middleware
+Loading configuration data and using it with the options framework
+Defining the ASP.NET Core pipeline
+Defining controllers and ViewModels
+Understanding how ASP.NET Core MVC creates the response HTML
+Razor Views
+Learning the Razor flow of control statements
+Understanding Razor View properties
+Using Razor tag helpers
+Reusing view code
+Understanding the connection between ASP.NET Core MVC and design principles
+Advantages of the ASP.NET Core pipeline
+Server-side and client-side validation
+ASP.NET Core globalization
+The MVC pattern
+Summary
+Questions
+Further reading
+Implementing Frontend Microservices with ASP.NET Core
+Technical requirements
+Frontends and micro-frontends
+Public web APIs
+HTML micro-frontends
+Application specifications and architecture
+Defining application specifications
+Defining the application architecture
+Defining the domain layer abstraction
+Defining the data layer
+Defining the application layer
+Defining controllers and views
+Summary
+Further reading
+Blazor WebAssembly
+Technical requirements
+Blazor WebAssembly architecture
+What is a single-page application?
+Loading and starting the application
+Routing
+Blazor pages and components
+Component structure
+Templates and cascading parameters
+Error handling
+Events
+Bindings
+How Blazor updates HTML
+Component lifecycle
+Blazor forms and validation
+Modifying HTML <head> content from Blazor components
+Blazor advanced features
+References to components and HTML elements
+JavaScript interoperability
+Globalization and localization
+Authentication and authorization
+Communication with the server
+AOT compilation
+Third-party tools for Blazor WebAssembly
+Use case – implementing a simple application in Blazor WebAssembly
+Preparing the solution
+Implementing the required ASP.NET Core REST APIs
+Implementing the business logic in a service
+Implementing the user interface
+Summary
+Questions
+Further reading
+Native versus Web Clients
+Technical requirements
+Technologies focused on native development
+Windows Forms
+Windows Presentation Foundation (WPF)
+Xamarin
+Technologies focused on web development
+Progressive web applications
+Cross-platform technologies
+Xamarin.Forms
+.NET MAUI
+A first look at .NET MAUI
+.NET MAUI Blazor applications
+Summary
+Questions
+Further reading
+Artificial Intelligence and Machine Learning
+Technical requirements
+Introduction to AI and machine learning
+Classification of the most common artificial intelligence techniques
+Heuristic search
+First-order calculus
+Planners
+Heuristic rules, neural networks, and Bayesian networks
+Truth maintenance systems
+What is machine learning and why does it work?
+Machine learning basics
+How many examples do I need to learn my function?
+Learning smooth functions
+Neural networks
+The support vector algorithm
+Learning small computer programs: induction-based learning
+From theory to practice: the role of a software architect in an ML project
+Step 1 – Define your goal
+Step 2 – Provide and prepare data
+Step 3 – Train, tune, and deploy your model
+Step 4 – Test the trained model and feed back on it
+ML.NET – Machine learning made for .NET
+ML.NET Model Builder
+Summary
+Questions
+Further reading
+Best Practices in Coding C# 10
+Technical requirements
+The simpler your code, the better a programmer you are
+Maintainability index
+Cyclomatic complexity
+Depth of inheritance
+Class coupling
+Number of lines of code
+Using a version control system
+Dealing with version control systems in teams
+Writing safe code in C#
+try-catch
+try-finally and using
+The IDisposable interface
+.NET 6 tips and tricks for coding
+Identifying well-written code
+Understanding and applying tools that can evaluate C# code
+Applying extension tools to analyze code
+Applying SonarAnalyzer
+Checking the final code after analysis
+Applying this chapter to the WWTravelClub sample project
+WWTravelClub – DOs and DON’Ts in writing code
+WWTravelClub – Evaluating C# code before publishing an application
+Summary
+Questions
+Further reading
+Understanding DevOps Principles
+Technical requirements
+Describing DevOps
+Understanding DevOps principles
+Defining continuous integration
+Understanding continuous delivery with Azure DevOps
+Creating the Azure Web App and the Azure database
+Configuring your Visual Studio solution
+Configuring Azure Pipelines
+Adding a manual approval for the release
+Creating a release
+The multistage environment
+Defining continuous feedback and the related DevOps tools
+Monitoring software with Application Insights
+Using the Test and Feedback tool to enable feedback
+Understanding SaaS
+Adapting your organization to a service scenario
+Developing software in a service scenario
+Technical implications of a service scenario
+Deciding when to adopt a SaaS solution
+Preparing a solution for a service scenario
+The WWTravelClub project approach
+Summary
+Questions
+Further reading
+Challenges of Applying CI & CD Scenarios
+Technical requirements
+Understanding CI/CD
+CI/CD and GitHub
+Understanding the risks and challenges when using CI/CD
+Disabling continuous production deployment
+Incomplete features
+An unstable solution for testing
+Understanding the WWTravelClub project approach
+Summary
+Questions
+Further reading
+Testing Your Enterprise Application
+Technical requirements
+Understanding unit and integration tests
+Automating unit and integration tests
+Writing automated (unit and integration) tests
+Acceptance tests: writing functional and performance tests
+Understanding test-driven development
+Functional tests
+Defining C# test projects in Visual Studio
+Using the xUnit test framework
+Advanced test preparation and tear-down scenarios
+Mocking interfaces with Moq
+Automating functional tests in C#
+Testing the staging application
+Testing the staging application with Selenium
+Testing a controlled application
+Use case – automating unit and functional tests
+Automating functional tests
+Connecting to an Azure DevOps repository
+Summary
+Questions
+Further reading
+Answers
+Other Books You May Enjoy
+Index

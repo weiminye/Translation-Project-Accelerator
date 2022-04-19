@@ -1,0 +1,31 @@
+sentence,translation
+What’s New in CSharp 10,C# 10新功能
+What’s New in CSharp 9.0,C# 9.0新功能
+What’s New in CSharp 8.0,C# 8.0新功能
+What’s New in CSharp 7.x,C# 7.x新功能
+What’s New in CSharp 6.0,C# 6.0新功能
+What’s New in CSharp 5.0,C# 5.0新功能
+What’s New in CSharp 4.0,C# 4.0新功能
+What’s New in CSharp 3.0,C# 3.0新功能
+What’s New in CSharp 2.0,C# 2.0新功能
+CSharp Language Basics,C#语言基础
+A First CSharp Program,第一个C#程序
+Compilation,编译
+Syntax,语法
+WHAT'S NEW IN CSharp,C#新功能
+Basic Coding in CSharp,C#基本编码
+Runtime and CSharp Language Versions,C#语言和运行版本
+PART I: The CSharp Language,第一部分：C#语言
+Rx Basics,Rx基础
+	CSharp 8,C# 8
+Anatomy of a Simple Program,一个简单程序的剖析
+A Brief History of CSharp,C#历史简介
+Code like a Pro in CSharp,像C#专家一样编写代码
+Calling a COM Component from CSharp,C#调用COM组件
+Passing State Between CSharp and a Script,在C#和脚本之间传递状态
+AOT compilation,AOT编译
+Compilation Symbols,编译符号
+Understanding Razor syntax,理解Razor语法
+	Sweetening LINQ syntax with syntactic sugar,用语法糖使LINQ语法变甜
+	Changing the color scheme for CSharp syntax,更改C#语法的颜色方案
+Understanding the syntax of a regular expression,理解正则表达式的语法

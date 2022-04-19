@@ -1,0 +1,391 @@
+Preface
+Who This Book Is For
+Conventions Used in This Book
+Using Code Examples
+O’Reilly Online Learning
+How to Contact Us
+Acknowledgments
+1. Introducing C#
+Why C#?
+C#’s Defining Features
+Managed Code and the CLR
+Prefer Generality to Specialization
+C# Standards and Implementations
+Many Microsoft .NETs (Temporarily)
+Targeting Multiple .NET Versions with .NET Standard
+Visual Studio and Visual Studio Code
+Anatomy of a Simple Program
+Adding a Project to an Existing Solution
+Referencing One Project from Another
+Referencing External Libraries
+Writing a Unit Test
+Namespaces
+Classes
+Program Entry Point
+Unit Tests
+Summary
+2. Basic Coding in C#
+Local Variables
+Scope
+Statements and Expressions
+Statements
+Expressions
+Comments and Whitespace
+Preprocessing Directives
+Compilation Symbols
+#error and #warning
+#line
+#pragma
+#nullable
+#region and #endregion
+Fundamental Data Types
+Numeric Types
+Booleans
+Strings and Characters
+Tuples
+Dynamic
+Object
+Operators
+Flow Control
+Boolean Decisions with if Statements
+Multiple Choice with switch Statements
+Loops: while and do
+C-Style for Loops
+Collection Iteration with foreach Loops
+Patterns
+Getting More Specific with when
+Patterns in Expressions
+Summary
+3. Types
+Classes
+Static Members
+Static Classes
+Reference Types
+Structs
+When to Write a Value Type
+Guaranteeing Immutability
+Members
+Fields
+Constructors
+Deconstructors
+Methods
+Properties
+Indexers
+Initializer Syntax
+Operators
+Events
+Nested Types
+Interfaces
+Default Interface Implementation
+Enums
+Other Types
+Anonymous Types
+Partial Types and Methods
+Summary
+4. Generics
+Generic Types
+Constraints
+Type Constraints
+Reference Type Constraints
+Value Type Constraints
+Value Types All the Way Down with Unmanaged Constraints
+Not Null Constraints
+Other Special Type Constraints
+Multiple Constraints
+Zero-Like Values
+Generic Methods
+Type Inference
+Generics and Tuples
+Inside Generics
+Summary
+5. Collections
+Arrays
+Array Initialization
+Searching and Sorting
+Multidimensional Arrays
+Copying and Resizing
+List<T>
+List and Sequence Interfaces
+Implementing Lists and Sequences
+Implementing IEnumerable<T> with Iterators
+Collection<T>
+ReadOnlyCollection<T>
+Addressing Elements with Index and Range Syntax
+System.Index
+System.Range
+Supporting Index and Range in Your Own Types
+Dictionaries
+Sorted Dictionaries
+Sets
+Queues and Stacks
+Linked Lists
+Concurrent Collections
+Immutable Collections
+ImmutableArray<T>
+Summary
+6. Inheritance
+Inheritance and Conversions
+Interface Inheritance
+Generics
+Covariance and Contravariance
+System.Object
+The Ubiquitous Methods of System.Object
+Accessibility and Inheritance
+Virtual Methods
+Abstract Methods
+Inheritance and Library Versioning
+Sealed Methods and Classes
+Accessing Base Members
+Inheritance and Construction
+Special Base Types
+Summary
+7. Object Lifetime
+Garbage Collection
+Determining Reachability
+Accidentally Defeating the Garbage Collector
+Weak References
+Reclaiming Memory
+Garbage Collector Modes
+Temporarily Suspending Garbage Collections
+Accidentally Defeating Compaction
+Forcing Garbage Collections
+Destructors and Finalization
+IDisposable
+Optional Disposal
+Boxing
+Boxing Nullable<T>
+Summary
+8. Exceptions
+Exception Sources
+Exceptions from APIs
+Failures Detected by the Runtime
+Handling Exceptions
+Exception Objects
+Multiple catch Blocks
+Exception Filters
+Nested try Blocks
+finally Blocks
+Throwing Exceptions
+Rethrowing Exceptions
+Failing Fast
+Exception Types
+Custom Exceptions
+Unhandled Exceptions
+Summary
+9. Delegates, Lambdas, and Events
+Delegate Types
+Creating a Delegate
+Multicast Delegates
+Invoking a Delegate
+Common Delegate Types
+Type Compatibility
+Behind the Syntax
+Anonymous Functions
+Captured Variables
+Lambdas and Expression Trees
+Events
+Standard Event Delegate Pattern
+Custom Add and Remove Methods
+Events and the Garbage Collector
+Events Versus Delegates
+Delegates Versus Interfaces
+Summary
+10. LINQ
+Query Expressions
+How Query Expressions Expand
+Supporting Query Expressions
+Deferred Evaluation
+LINQ, Generics, and IQueryable<T>
+Standard LINQ Operators
+Filtering
+Select
+SelectMany
+Ordering
+Containment Tests
+Specific Items and Subranges
+Aggregation
+Set Operations
+Whole-Sequence, Order-Preserving Operations
+Grouping
+Joins
+Conversion
+Sequence Generation
+Other LINQ Implementations
+Entity Framework
+Parallel LINQ (PLINQ)
+LINQ to XML
+Reactive Extensions
+Tx (LINQ to Logs and Traces)
+Summary
+11. Reactive Extensions
+Fundamental Interfaces
+IObserver<T>
+IObservable<T>
+Publishing and Subscribing with Delegates
+Creating an Observable Source with Delegates
+Subscribing to an Observable Source with Delegates
+Sequence Builders
+Empty
+Never
+Return
+Throw
+Range
+Repeat
+Generate
+LINQ Queries
+Grouping Operators
+Join Operators
+SelectMany Operator
+Aggregation and Other Single-Value Operators
+Concat Operator
+Rx Query Operators
+Merge
+Windowing Operators
+The Scan Operator
+The Amb Operator
+DistinctUntilChanged
+Schedulers
+Specifying Schedulers
+Built-in Schedulers
+Subjects
+Subject<T>
+BehaviorSubject<T>
+ReplaySubject<T>
+AsyncSubject<T>
+Adaptation
+IEnumerable<T> and IAsyncEnumerable<T>
+.NET Events
+Asynchronous APIs
+Timed Operations
+Interval
+Timer
+Timestamp
+TimeInterval
+Throttle
+Sample
+Timeout
+Windowing Operators
+Delay
+DelaySubscription
+Summary
+12. Assemblies
+Anatomy of an Assembly
+.NET Metadata
+Resources
+Multifile Assemblies
+Other PE Features
+Type Identity
+Loading Assemblies
+Assembly Resolution
+Explicit Loading
+Isolation and Plugins with AssemblyLoadContext
+Assembly Names
+Strong Names
+Version
+Culture
+Protection
+Summary
+13. Reflection
+Reflection Types
+Assembly
+Module
+MemberInfo
+Type and TypeInfo
+MethodBase, ConstructorInfo, and MethodInfo
+ParameterInfo
+FieldInfo
+PropertyInfo
+EventInfo
+Reflection Contexts
+Summary
+14. Attributes
+Applying Attributes
+Attribute Targets
+Compiler-Handled Attributes
+CLR-Handled Attributes
+Defining and Consuming Attributes
+Attribute Types
+Retrieving Attributes
+Summary
+15. Files and Streams
+The Stream Class
+Position and Seeking
+Flushing
+Copying
+Length
+Disposal
+Asynchronous Operation
+Concrete Stream Types
+One Type, Many Behaviors
+Text-Oriented Types
+TextReader and TextWriter
+Concrete Reader and Writer Types
+Encoding
+Files and Directories
+FileStream Class
+File Class
+Directory Class
+Path Class
+FileInfo, DirectoryInfo, and FileSystemInfo
+Known Folders
+Serialization
+BinaryReader, BinaryWriter, and BinaryPrimitives
+CLR Serialization
+JSON.NET
+Summary
+16. Multithreading
+Threads
+Threads, Variables, and Shared State
+The Thread Class
+The Thread Pool
+Thread Affinity and SynchronizationContext
+Synchronization
+Monitors and the lock Keyword
+SpinLock
+Reader/Writer Locks
+Event Objects
+Barrier
+CountdownEvent
+Semaphores
+Mutex
+Interlocked
+Lazy Initialization
+Other Class Library Concurrency Support
+Tasks
+The Task and Task<T> Classes
+Continuations
+Schedulers
+Error Handling
+Custom Threadless Tasks
+Parent/Child Relationships
+Composite Tasks
+Other Asynchronous Patterns
+Cancellation
+Parallelism
+The Parallel Class
+Parallel LINQ
+TPL Dataflow
+Summary
+17. Asynchronous Language Features
+Asynchronous Keywords: async and await
+Execution and Synchronization Contexts
+Multiple Operations and Loops
+Returning a Task
+Applying async to Nested Methods
+The await Pattern
+Error Handling
+Validating Arguments
+Singular and Multiple Exceptions
+Concurrent Operations and Missed Exceptions
+Summary
+18. Memory Efficiency
+(Don’t) Copy That
+Representing Sequential Elements with Span<T>
+Utility Methods
+Stack Only
+Representing Sequential Elements with Memory<T>
+ReadOnlySequence<T>
+Processing Data Streams with Pipelines
+Processing JSON in ASP.NET Core
+Summary
+Index

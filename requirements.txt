@@ -1,0 +1,8 @@
+Flask==2.1.0
+spacy
+requests
+joblib
+Flask_Cors
+pytest
+pyTigerGraph
+icecream
