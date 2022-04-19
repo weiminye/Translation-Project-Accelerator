@@ -29,8 +29,10 @@ Currently a prototype.
    ```
 9. go to `./client` directory and run below command to start frontend server
    ```
+    yarn 
     yarn start
    ```
+   More detailed information please see https://github.com/weiminye/Translation-Project-Accelerator/blob/main/client/README.md
 10. Open your browser (recommend Chrome) to vist http://localhost:8000/
 11. Enjoy!
 
