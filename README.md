@@ -1,7 +1,5 @@
 # Translation-Project-Accelerator
 
-Currently a prototype.
-
 # How to run it
 
 1. Create a `TigerGraph` Database at `Cloud` or `local`
