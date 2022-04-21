@@ -8,7 +8,7 @@
    server = 'https://{your TigerGraph Server}'
    ```
 3. Create your virtualenv and activate it.
-4. Install the required referrences with `requirements.txt`
+4. Install the required library with `requirements.txt`
    ```
     pip install -r requirements.txt
    ```
